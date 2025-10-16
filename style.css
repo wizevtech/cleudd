@@ -1314,5 +1314,12 @@ footer {
     }
 }
 
+/* Faz a legenda não bloquear o clique nas imagens */
+.galeria-caption {
+    pointer-events: none;
+}
+
+
+
 
 /* adicoes textos... */
