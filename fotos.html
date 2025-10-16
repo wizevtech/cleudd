@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cleud Lopes - Fotos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="txt">Cleud <span>Lopes</span></a>
+            <div class="hamburger" id="hamburger" aria-label="Abrir menu" role="button" tabindex="0">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="musicas.html">Músicas</a></li>
+                <li><a href="fotos.html">Fotos</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="fotos">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="text-align: center; margin: 1cm; color: rgb(192, 180, 18);">Fotos</h2>
+            </div>
+
+            <div class="galeria-grid">
+                <!-- par 1 -->
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft1.jpg" alt="" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft2.jpg" alt="Show Cleud Lopes" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <!-- legenda após 2 fotos -->
+                <div class="galeria-caption" style="text-align: center; margin-top: 1rem;">
+
+                    <p style="color: #d47a7a;">Te amo! te amo! te amo!</p>
+                    <p style="color: #d47a7a;">Em reticências...</p>
+                    <p style="color: #d47a7a;">O meu amor por ti</p>
+                    <p style="color: #7aa684;">É do tamanho do mundo</p>
+                    <p class="emoji-big" style="font-size: 55px;">🌏</p>
+                </div>
+
+
+
+                <!-- par 2 -->
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft4.jpg" alt="Show Cleud Lopes" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft5.jpg" alt="Cleud no estúdio" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <!-- legenda após 4 fotos -->
+                <div class="galeria-caption" style="text-align: center; margin-top: 1rem;">
+
+                    <p style="color: #c7b6e1;">Ô lua prateada,</p>
+                    <p style="color: #b4a0cc;">me conte um segredo.</p>
+                    <p style="color: #9d8fbf;">Por que que a gente ama</p>
+                    <p style="color: #8c7aad;">e sempre sente medo?</p>
+                    <p class="emoji-big" style="font-size: 40px;">🌕</p>
+                </div>
+
+
+                <!-- par 3 -->
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft3.jpg" alt="Cleud Lopes" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft6.jpg" alt="Cleud Lopes" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+
+                <!-- legenda após 6 fotos -->
+                <div class="galeria-caption" style="text-align: center; margin-top: 1rem;">
+
+                    <p style="color: #a39f91;">Se não existisse,</p>
+                    <p style="color: #a39f91;">não teria cidade,</p>
+                    <p style="color: #a39f91;">não teria saudade</p>
+                    <p style="color: #a39f91;">e nem sequer ilusão.</p>
+                    <p class="emoji-big" style="font-size: 55px;">🌌</p>
+                </div>
+
+
+
+
+                <!-- item solto (7) -->
+                <div class="galeria-item">
+                    <img src="conteudo/imagens/fts/ft7.jpg" alt="Cleud Lopes" />
+                    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+            <!-- .galeria-grid -->
+        </div>
+        <!-- .container -->
+    </section>
+
+    <!-- Modal de foto (colocado no HTML para evitar conflitos CSS/JS) -->
+    <div id="modal-foto" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-wrapper" role="document">
+            <button class="close-modal" aria-label="Fechar">✕</button>
+            <div class="modal-body">
+                <img class="modal-content" src="" alt="Foto ampliada" />
+            </div>
+            <div class="modal-caption" aria-hidden="true"></div>
+        </div>
+    </div>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo"><img src="conteudo/imagens/logos/logo.png" alt="Cleud Lopes" class="footer-logo-img" /></div>
+            <p class="copyright">&copy; 2025 Cleud Lopes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
